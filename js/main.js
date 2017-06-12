@@ -7,9 +7,9 @@ const randomizer = (sede) =>{
 
 }
 
-const start = () =>{
+const start = (sede) =>{
 
-	const imageCoder = $('<img class="image" src="img/'+randomizer(peru)+'">');
+	const imageCoder = $('<img class="image" src="img/'+randomizer(sede)+'">');
 	const showImage = $('#show-image');
 	showImage.append(imageCoder);
 }
@@ -21,7 +21,9 @@ $(document).ready(function(){
 
 	$(sedes).change(function(){
 		if($(this).val() == 'Lima'){
-			start();
+			start(peru);
+		}else{
+			start(mexico);
 		}
 	})
 
