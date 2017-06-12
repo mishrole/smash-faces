@@ -15,5 +15,15 @@ h1{
 }
 
 img{
-	width: 50%;
+	width: 100%;
+}
+
+select.browser-default{
+	height: 2em;
+	outline: none;
+}
+
+.sede{
+	position: relative;
+	top: 3px;
 }
